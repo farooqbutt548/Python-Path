@@ -33,3 +33,34 @@ if 2 in name:
 if 7 not in name:
     #123
     print("it's true statement") '''
+
+
+# ---Loops
+#  we can get output of while_loop with for_loop and vise versa
+
+# --simple while_loops
+'''num = int(input('enter a n_num to their sum : '))
+total = 0
+i = 0
+while i <= num:
+    total += i
+    i += 1
+print(f"the total sum is : {total}") '''
+
+# while_loop with slicing      1234 = 1+2+3+4
+'''number = input('enter numbers : ')
+total = 0
+i = 0
+while i < len(number):
+    total += int(number[i])
+    i += 1
+print(total)'''
+# name letter count with while loof
+'''name = input('enter your name : ')
+temp_cell = ''
+i = 0
+while i < len(name):
+    if name[i] not in temp_cell:
+        temp_cell += name[i]
+        print(f'the char {name[i]} is {name.count(name[i])} times in {name}')
+    i +=1'''
