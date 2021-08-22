@@ -33,5 +33,3 @@ if 2 in name:
 if 7 not in name:
     #123
     print("it's true statement") '''
-
-#zaheera 
