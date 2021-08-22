@@ -31,5 +31,6 @@ name =[1,2,3,4,5,6]
 if 2 in name:
     print('it\'s is present')
 if 7 not in name:
+    #123
     print("it's true statement") '''
 
