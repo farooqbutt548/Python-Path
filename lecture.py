@@ -141,8 +141,4 @@ print(word.lower())  # for lower letters
 print(word.upper())  # for upper letters
 print(word.count('b'))  # for count a letter in word
 print(word.title())  # for first letter capital
-print(word.center(80)) # for aligning text 
-
-
-
-'''
+print(word.center(80)) # for aligning text '''
