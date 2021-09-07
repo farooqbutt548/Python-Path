@@ -212,7 +212,7 @@ print(make_list)'''
 
                         # ----- Tuple 
 
-tup1 = (1,2,3,4,5,6.0)
+'''tup1 = (1,2,3,4,5,6.0)
 for i in tup1:              # we can use while loop too
     print(i, end=' ')
 
@@ -231,4 +231,43 @@ list_tuple[3].append('new last')
 print(list_tuple)
 print(min(tup1))
 print(max(tup1))
-print(tup1+tup1)
+print(tup1+tup1)'''
+
+                                              # ---- Dictionary
+
+designation = {'farooq':'c.e.o', 'zaheer':'cfo', 'waqas': 'accountant'}     # dictionary (key:value)
+print(designation)
+print (type(designation))
+marks = dict (ict = 97, dld= 88, algebra = 87, ai = 55)     # dict method is used (i like this method)
+print(marks)
+print(type(marks))
+
+print(designation['zaheer'])
+# simple dictionary
+bio = dict(name = 'farooq',
+ age= 25,
+  degree = 'BS-IT',
+   roll_num = 660,
+    City = 'Faisalabad',
+     Phon = 923015902110)
+print(bio['degree'])
+                    # dictionary in dictionary
+phon_num = dict(
+    farooq = dict(jazz = 923015902110, zong = 923179600604),
+    afzal = dict(jazz =  923004049286, zong = 923184049286),
+    zaheer = 923007663624
+)
+print(phon_num)
+print(phon_num['farooq']['zong'])       # access dictionary in dictionary value
+
+                    # Add in Dictionary 
+empty = {}
+empty['sargodha'] = 'UOS'
+empty['lahore'] = 'UET'
+empty['islamabad'] = 'AIOU'
+empty['faisalabad'] = 'GCUF'
+print(empty)
+del empty['faisalabad']     # delete the (key :value)
+print(empty)
+empty.clear()           # will delete all entire entries
+print(empty)
