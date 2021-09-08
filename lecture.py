@@ -318,7 +318,7 @@ print(empty)                    # faisalabad is popped
 
 news_empty = empty.popitem()    # randomply pop and save in variable
 print(news_empty)
-print(type(news_empty))'''
+print(type(news_empty))
                                     # -------- update method
 student = dict(name = 'farooq', 
                     caste = 'kashmiri',
@@ -336,3 +336,48 @@ student.update(more_info)
 print(student)                  # merge both info and 'name' will update as of more_info
 student.update({})
 print(student)                  # nothing will update same previos information
+            # ------- get method
+print(more_info.get('adress'))          # value of adress
+print(more_info.get('adresses'))        # give 'none' not error
+# copy method 
+
+a = dict(name = 'farooq', caste = 'butt', age = 25)
+b= a.copy()             # two same but different dictionary , a! = B
+a.pop('age')
+print(a)
+print(b)
+
+# EXERCISE No. 1     (key, key*3)
+def cube_finder(n):
+    cubes = {}
+    for i in range(1,n+1):
+        cubes[i] = i**3
+    return cubes
+print(cube_finder(10))
+
+# EXERCISE No. 2    (key, key*2) 
+def twice(n):
+    twice_dict = {}
+    for i in range(1,n+1):
+        twice_dict[i] = i*2
+    return(twice_dict)
+
+print(twice(10)) 
+# EXERCISE No. 3
+def info (data):
+    info_dict = {}
+    a = input('enter name : ')
+    b = input('enter age :')
+    c = input('enter degree :')
+    d = input('enter uni :')
+    e = input('enter number :')
+    info_dict['name'] = a
+    info_dict['age'] = b
+    info_dict['degree'] = c
+    info_dict['uni'] = d
+    info_dict['number'] = e
+    return(info_dict)
+
+data = {}
+print(info(data).items())  '''
+
