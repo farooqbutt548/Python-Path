@@ -235,7 +235,7 @@ print(tup1+tup1)'''
 
                                               # ---- Dictionary
 
-designation = {'farooq':'c.e.o', 'zaheer':'cfo', 'waqas': 'accountant'}     # dictionary (key:value)
+'''designation = {'farooq':'c.e.o', 'zaheer':'cfo', 'waqas': 'accountant'}     # dictionary (key:value)
 print(designation)
 print (type(designation))
 marks = dict (ict = 97, dld= 88, algebra = 87, ai = 55)     # dict method is used (i like this method)
@@ -269,5 +269,70 @@ empty['faisalabad'] = 'GCUF'
 print(empty)
 del empty['faisalabad']     # delete the (key :value)
 print(empty)
-empty.clear()           # will delete all entire entries
-print(empty)
+
+alphabet = dict(a='b', c='d', e='f')
+alphabet.clear()           # will delete all entire entries
+print(alphabet)
+
+city = input('input city : ')
+if city in empty:                           # for finding key. for integer we will make it int form
+    print('Yup! here in dictionary.')       
+else:
+    print('Nope! not in dictionary.')
+
+uni = input('input uni : ')
+if uni in empty.values():                           # for finding value 
+    print('Yup! here in dictionary.')       
+else:
+    print('Nope! not in dictionary.')
+
+empty = {}
+empty['sargodha'] = 'UOS'
+empty['lahore'] = 'UET'
+empty['islamabad'] = 'AIOU'
+empty['faisalabad'] = 'GCUF'
+print(empty.values())               # -------- all values will print
+for i in empty.values():    
+    print(i)                        # -------- all values will print
+
+for i in empty.keys():                     # -------- all keys will print.... (either use key method or not)
+    print (i)
+
+                                        # ---------- items method
+empty = {}
+empty['sargodha'] = 'UOS'
+empty['lahore'] = 'UET'
+empty['islamabad'] = 'AIOU'
+empty['faisalabad'] = 'GCUF'
+item_method = empty.items()         # make a list of tuples of key, values
+print(item_method)
+print(type(item_method))
+# Example of item method
+for city, uni in empty.items():
+    print(f'the {city} has {uni} populer university')      # looping with item method
+
+new_empty = empty.pop('faisalabad')         # popped item stored in new_empty
+print(new_empty)
+print(type(new_empty))
+print(empty)                    # faisalabad is popped 
+
+news_empty = empty.popitem()    # randomply pop and save in variable
+print(news_empty)
+print(type(news_empty))'''
+                                    # -------- update method
+student = dict(name = 'farooq', 
+                    caste = 'kashmiri',
+                    roll_num = 660,
+                    uni = 'UOS',
+                    degree = 'BSIT')
+
+more_info = dict( home_town = 'faisalabad',
+                    adress = 'orchards home',
+                    name = 'Muhammad Farooq',
+                    cell_num = 923015902110)
+print(student)
+print(more_info)
+student.update(more_info)
+print(student)                  # merge both info and 'name' will update as of more_info
+student.update({})
+print(student)                  # nothing will update same previos information
