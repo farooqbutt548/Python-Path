@@ -435,19 +435,21 @@ import calendar
 dt = datetime.datetime.now()            # current time and date
 print (dt)
 
-print('years are: ',dt.year)            # individual time and date
-print('months are: ',dt.month)
-print('days are: ',dt.day)
-print('hour are: ',dt.hour)
-print('minutes are: ',dt.minute)
-print('seconds are: ',dt.second)
-print('microseconds are: ',dt.microsecond)
+# print('years are: ',dt.year)            # individual time and date
+# print('months are: ',dt.month)
+# print('days are: ',dt.day)
+# print('hour are: ',dt.hour)
+# print('minutes are: ',dt.minute)
+# print('seconds are: ',dt.second)
+# print('microseconds are: ',dt.microsecond)
 
 # all_cal = calendar.calendar(2021)          # all months of the year
 # print(all_cal)
 
-cal = calendar.month(2022,4)            # specific month calendar
-print(cal)
+# cal = calendar.month(2022,4)            # specific month calendar
+# print(cal)
 
-print('an other way to print month', datetime.datetime.now().month)'''
+# print('an other way to print month: ', datetime.datetime.now().month, 'mean September')
+#           format of time and date
 
+print(dt.strftime('the date is: %a, %dth %b, %Y'))  # %a,%A = day, %d=date, %b=month, %y,%Y=year'''
