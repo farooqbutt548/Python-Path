@@ -531,3 +531,21 @@ print (ab)
 print (ab)
 print(cd(8,2))      # here most recent module(module2) will execute'''
 
+        # ------type(6) with classes
+
+'''import module1
+from module2 import department, university
+
+print(department().IT())
+print(module1.house().beaconites())
+
+b = module1.house().beaconites()        # now all path save in 'b', b = beaconites()
+print(b)    '''
+
+        # ---------type(7)
+
+'''from module2 import university, department
+from module1 import university
+
+print(university().UOS())       # most recent class obj calls '''
+

@@ -33,3 +33,11 @@ def n_add (n):
 
 def cd(a,b):
     return(a//b)
+
+class house:
+    def beaconites(name):
+        return('this is beaconites tech : ')
+
+class university:
+    def UOS(name):
+        return('this is new uni')
