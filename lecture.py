@@ -453,3 +453,13 @@ print (dt)
 #           format of time and date
 
 print(dt.strftime('the date is: %a, %dth %b, %Y'))  # %a,%A = day, %d=date, %b=month, %y,%Y=year'''
+'''import time
+t = time.localtime()
+print(t)            # all type of time and date
+
+print('years : ',t.tm_year)         # individual time or date
+print('months : ',t.tm_mon)
+print('days : ',t.tm_mday)
+print(' hours :',t.tm_hour)
+print(' minutes :',t.tm_min)
+print(' seconds :',t.tm_sec)'''
