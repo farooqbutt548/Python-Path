@@ -549,3 +549,72 @@ from module1 import university
 
 print(university().UOS())       # most recent class obj calls '''
 
+                                         # ----------- Exceptions
+
+import builtins
+from os import error, name
+
+
+# builtins errors
+'''Exceptions mean error, when occure we put our code in try block and strike with except blocks (one or more)
+except blocks caught the exceptioms and make exception handling. when no exception found Then 
+else block execute but the finally block compulsory executes either Exceptions or not'''
+
+# basic concept
+'''a = 10
+b = 3           # if b = 0 then divided by zero will occures, else will not execute
+d = 3
+try:
+    d = a//b
+    print(d)
+   
+
+except:
+        print( 'some error is occuring')
+
+else:
+    print('in the else block,(no exception found)')
+
+finally:
+    print('finally block compulsory prints\n')
+
+print('the rest code here')
+print('\n')'''
+        # -------------types of errors
+
+# IndexError    (index of sequence is out of range)
+'''list1 = ['corona virus', 'flu','Smallpox']
+try:
+    print('the last virus is',list1[5]) # list1[5] not exist (out of range)
+except IndexError as obj:
+    print(obj)
+else:
+    print('no exception found')
+finally:
+    print('in the finally block')
+print('\n')'''
+# ModuleNotFoundError 
+'''try:
+    from module import n_add        # module1 is correct so, no module found
+    print(n_add(6))
+except (ModuleNotFoundError, SyntaxError ) as obj:
+    print(obj, 'error here')
+else:
+    print('no exception found')
+print('\n')'''
+# KeyError
+dict1 = dict(name = 'farooq', caste = 'butt', roll_num = 660)
+try:
+    print(dict1['names'])     # roll_num is correct now key error will occure
+except (KeyError,SyntaxError, ValueError, TypeError) as obj:
+    print (obj,'error')
+else:
+    print('no exception found')
+# NameError
+'''try:   
+    a = 'butt sb'
+    print(b)        # 'a' is defined not 'b'
+except (NameError, SyntaxError,LookupError,IndentationError) as obj:
+    print(obj, ', name error')
+else:
+    print('no exception found')'''
